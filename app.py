@@ -17,7 +17,7 @@ def record_event():
     filepath_mp3 = FD.asksaveasfilename(filetypes=[('Audio', '.mp3')]) # Сохранение .mp3 файла
     REC.record(REC.file_read(filepath_txt), filepath_mp3)
     print(filepath_txt, filepath_mp3)
-    
+
 # Воспроизведение аудио
 def play_event():
     filepath = FD.askopenfilename(filetypes=[('Audio', '.mp3')]) # Получение .mp3 файла
@@ -29,7 +29,8 @@ b_rec = ctk.CTkButton(app,
                       text="Record .txt file", 
                       command=record_event, 
                       width=150, height=50, 
-                      fg_color='green', 
+                      fg_color='#00522c', 
+                      hover_color='#00301a',
                       corner_radius=15, 
                       anchor='center', 
                       font=('', 15))
@@ -39,7 +40,8 @@ b_play = ctk.CTkButton(app,
                        text='Play .mp3 file', 
                        command=play_event, 
                        width=150, height=50, 
-                       fg_color='green', 
+                       fg_color='#00522c', 
+                       hover_color='#00301a',
                        corner_radius=15, 
                        anchor='center', 
                        font=('', 15))
