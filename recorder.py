@@ -2,9 +2,9 @@ import os
 from gtts import gTTS
 
 # Запись .mp3 файла
-def record(input_text, filepath, lang):
+def record(input_text, filepath, savename, lang):
     tts = gTTS(input_text, lang = lang, lang_check=True)
-    tts.save(f'{filepath}.mp3')
+    tts.save(f'{filepath}/{savename}.mp3')
 
 # Получение текста из .txt файла
 def file_read(filepath):
