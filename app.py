@@ -23,6 +23,7 @@ ctk.set_default_color_theme("green") # Цветовая тема
 # 
 
 opt_lang_var = ctk.StringVar(value='ru') # Язык записи
+lang = opt_lang_var.get()
 txtpath_tk = tkinter.StringVar() # Путь файла для записи TKinter
 savepath_tk = tkinter.StringVar() # Путь записи TKinter
 savename_tk = tkinter.StringVar() # Имя записи TKinter
