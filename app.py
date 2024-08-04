@@ -38,7 +38,7 @@ savename: str # Имя записи
 def txt_file_event():
     global filepath_txt 
     filepath_txt = FD.askopenfilename(filetypes=[('Text', '.txt')]) # Получение .txt файла
-    savepath_tk.set(value=filepath_txt)
+    txtpath_tk.set(value=filepath_txt)
     print(filepath_txt)
 
 # Получение пути сохранения
